@@ -5,7 +5,7 @@ class ServerInfo:
 
     @staticmethod  # 静态方法 类名.方法名 @:修饰符
     def get_url(url):
-        return "http://cq.zkxqgroup.com:8090/api/v1{}".format(url)
+        return "http://cq.zkxqgroup.com:10060/api/v1{}".format(url)
 
 
 # # 静态方法通过 类名.方法名
