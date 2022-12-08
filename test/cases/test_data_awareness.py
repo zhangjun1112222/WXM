@@ -39,7 +39,7 @@ class TestDataAwareness:
         u = ServerInfo.get_url('/data/aware/common/source/stat')
         h = {"X-TenantID": 'system', "x-token": test_login}
         res = requests.get(url=u, headers=h)
-        print(res.text)
+        # print(res.text)
         assert res.json()['code'] == 200
         assert res.status_code == 200
 
@@ -51,7 +51,7 @@ class TestDataAwareness:
         u = ServerInfo.get_url('/data/aware/satellite/adds/all/list')
         h = {"X-TenantID": 'system', "x-token": test_login}
         res = requests.get(url=u, headers=h)
-        print(res.text)
+        # print(res.text)
         assert res.json()['code'] == 200
         assert res.status_code == 200
 
@@ -63,7 +63,7 @@ class TestDataAwareness:
         u = ServerInfo.get_url('/data/aware/satellite/adds/cur-month/list')
         h = {"X-TenantID": 'system', "x-token": test_login}
         res = requests.get(url=u, headers=h)
-        print(res.text)
+        # print(res.text)
         assert res.json()['code'] == 200
         assert res.status_code == 200
 
@@ -74,7 +74,7 @@ class TestDataAwareness:
         u = ServerInfo.get_url('/data/aware/satellite/stat/heat-map')
         h = {"X-TenantID": 'system', "x-token": test_login}
         res = requests.get(url=u, headers=h)
-        print(res.text)
+        # print(res.text)
         assert res.json()['code'] == 200
         assert res.status_code == 200
 
@@ -85,7 +85,7 @@ class TestDataAwareness:
         u = ServerInfo.get_url('/data/aware/satellite/stat/type-count')
         h = {"X-TenantID": 'system', "x-token": test_login}
         res = requests.get(url=u, headers=h)
-        print(res.text)
+        # print(res.text)
         assert res.json()['code'] == 200
         assert res.status_code == 200
 

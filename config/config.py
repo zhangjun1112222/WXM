@@ -12,9 +12,9 @@ class ServerInfo:
 # a1 = ServerInfo.get_url("/haimo/sass/systemUser/release/getLogin")
 # print(a1)
 
-
-def get_url(url):
-    return "http://ljtest.liuyun.tech:28080{}".format(url)
+#
+# def get_url(url):
+#     return "http://ljtest.liuyun.tech:28080{}".format(url)
 
 # a = get_url("/haimo/sass/systemUser/release/getLogin")
 # print(a)
