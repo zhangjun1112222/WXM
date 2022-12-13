@@ -6,7 +6,7 @@ import requests
 
 class TestIndustryRiskDetection:
     '''
-    行业风险预警
+    行业风险预警（风险检测进去）
     '''
 
     def test_commodity_price_trend(self, test_login):

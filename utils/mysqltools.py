@@ -30,22 +30,24 @@ class MysqlTools():
 
 if __name__ == "__main__":
     mysql_tools = MysqlTools()
-    res = mysql_tools.query('select * from t_user where username ="liuyun1"')
+    res = mysql_tools.query("SELECT ier.loan_balance FROM index_enterprise_risk ier  join customer c on c.id=ier.customer_id WHERE ier.periods_id='acf9e591704e4cdeae74e8df70be265f' and c.code='客户505' "
+)
     print(res)
 
 
 
 # # 1.连接数据库
 # DBCONFIG = {
-#     "host":"ljtest.liuyun.tech",
-#     "port":33306,
-#     "user":"root",
-#     "password":"1qaz!QAZ",
-#     "db":"ljtestdb"
+#     "host":"cq.zkxqgroup.com",
+#     "port":3306,
+#     "user":"zhzl",
+#     "password":"Zhzl_2022",
+#     "db":"zhzl_equipment"
 # }
-
+#
 # # sql语句要注意内双外单，内单外双的原则
-# sql = "select * from t_user where username = 'liuyun1'"
+# sql = "SELECT ier.loan_balance FROM index_enterprise_risk ier  join customer c on c.id=ier.customer_id WHERE ier.periods_id='acf9e591704e4cdeae74e8df70be265f' and c.code='客户505' "
+#
 # # 连接并且打开数据库
 # db = pymysql.connect(host=DBCONFIG["host"], port=DBCONFIG["port"], user=DBCONFIG['user'], password=DBCONFIG['password'], db=DBCONFIG["db"])
 # # 获取查询窗口：游标
@@ -56,7 +58,7 @@ if __name__ == "__main__":
 # res = cur.fetchall()
 # # 关闭数据库连接
 # db.close()
-
+#
 # # 如果查询的结果为空，返回值就是(), 长度> 0
 # # 如果查询的结果不为空，返回值((row1), (row2), (row3))> 长度不为0
 # print(res)

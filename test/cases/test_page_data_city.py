@@ -4,7 +4,7 @@ import requests
 
 class TestCityData:
     '''
-    市级数据
+    市级数据(地图进去)
     '''
 
     def test_loan_stat(self,test_login):
